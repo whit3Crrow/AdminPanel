@@ -4,7 +4,7 @@
     $login = htmlspecialchars($_POST["login"], ENT_QUOTES, 'UTF-8');
     $hasło = htmlspecialchars($_POST["haslo"], ENT_QUOTES, 'UTF-8');
     
-    $recaptcha_secret = "6LfpSbQlAAAAAKqquUrkssg6nJGVYIr1NSfxPrS1";
+    $recaptcha_secret = "secretkey";
     $recaptcha_response = $_POST['g-recaptcha-response'];
     $recaptcha_url = "https://www.google.com/recaptcha/api/siteverify?secret=$recaptcha_secret&response=$recaptcha_response";
     $verify_response = file_get_contents($recaptcha_url);
