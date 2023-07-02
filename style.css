@@ -1,0 +1,504 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ustawienia dla wrappera */
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.mycentredtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#greencar{
+    background-image: url(/img/sowacki6_green_energy_car_eco_friendly_green_recycled_small_fb25a72b-cdbd-4d5c-ae83-2367a72a5eae.png);
+
+}
+
+#engine2{
+    background-image: url(/img/sowacki6_repearing_car_engine_fe78feb0-eea2-4bb6-9aa3-78eb4265b473.png);
+}
+
+#engine{
+    background-image: url(/img/sowacki6_repearing_car_engine_de9e9ae2-5f1f-4bd6-81d4-a35f4f982871.png);
+}
+#underwatercar{
+    background-image: url(/img/sowacki6_small_car_floating_fully_under_water_with_fishes_64fdb70c-cb38-4fa8-84a1-5db2b34f4bba.png);
+}
+#baner{
+    background-image: url(/img/sowacki6_row_of_tires_sorted_by_size_incrementaly_realistic_mo_e76341d6-cfd5-4c45-9099-5978df5a801d.png);
+}
+#musclecar{
+    background-image: url(/img/sowacki6_small_elegant_bmw_with_2_streams_of_paint_fowarding_t_29c26481-dbf9-4519-8a2a-d5768e5184a0.png);
+}
+
+.baner1 {
+    width: 100%;
+    height: 25%;
+    opacity: 1;
+    padding-bottom: 20%; /* Wysokość jest równa 1/5 szerokości */
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    
+  }
+.baner {
+    width: 100%;
+    height: 25%;
+    opacity: 1;
+    padding-bottom: 20%; /* Wysokość jest równa 1/5 szerokości */
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .baner span{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: black;
+  
+    box-shadow: 8px 29px 40px 48px rgba(255, 255, 255, 0.727);
+    bottom: -19px;
+    left: 0px;
+  }
+.img-zoom {
+    transition: transform .3s ease;
+    z-index: 2;
+  }
+
+.img-zoom:hover{
+    transform: scale(110%);
+}
+
+.motocarslead{
+    position: relative;
+    padding: 10px 15px 10px 10px;
+    border-bottom: 2px solid rgb(50, 0, 114);
+    box-shadow: 3px -1px 0px 2px black;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+}
+#usługi:hover{
+    transform: scale(105%);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+#pytania{
+    border-top:1p solid black;
+    min-height:700px;
+}
+.motocarslead::before
+{
+    background-color: rgba(255, 255, 255, 0.71);
+    position: absolute;
+    top: 100px;
+    left: -835px;
+    width: 100%;
+    height: 120px;
+    transform: rotate(-35deg);
+    content: '';
+    transition: 0.4s ease-in-out;
+}
+.motocarslead:hover::before{
+    left: 95%;
+}
+#cont{
+    overflow: hidden;
+}
+.my-box-shadow{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.font-shadow-white{
+    text-shadow: 1px 1px 3px white;
+}
+.font-shadow-black{
+    text-shadow: 1px 1px 3px black;
+    
+}
+.ikony{
+    width: 80px;
+    height: 80px;
+}
+.hiperlacze{
+    transition: all 0.3s ease-in-out;
+}
+.t{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hiperlacze:hover{
+    transform: scale(95%);
+
+}
+a,a:visited,a:focus,a:hover,a:active{
+    text-decoration: none;
+    color: inherit;
+}
+#usługi{
+    border: 2px solid black;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px; 
+}
+#usługi2{
+    border: 2px solid black;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+header{
+    position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+.my-border{
+    border: 1px solid black;
+}
+header{
+    border-bottom:2px solid rgb(7, 12, 117);
+    
+}
+.social{
+
+    display: flex;
+    width: 40px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    
+}
+.navbar ul{
+    padding: 0;
+    margin: 0 30px;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+.navbar ul li::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 30px;
+    background : #3bd4ff;
+    left: -65px;
+    top: -40px;
+    transform: rotate(37deg);
+    transition: all .4s;
+    opacity: 0.3;
+}
+.aktywny{
+    color: black;
+}
+.map-container {
+    width: 100%;
+    position: relative;
+    border-top: 1px solid black;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1700px;
+    height: 400px;
+    background-color: rgba(56, 47, 47, 0.095); /* Zmodyfikuj wartość alfa dla tła, aby uzyskać pożądany poziom przezroczystości */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Dodano własność pointer-events */
+}
+
+.overlay{
+    position: absolute;
+    left: 46%;
+    top: -55px;
+    z-index: 2;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    transform:rotate(45deg);
+    height: 110px;
+    width: 110px;
+    background-color: rgba(255, 255, 255);
+}
+.navbar ul li:hover:before {
+    left: 95%;
+}
+.navbar ul li:hover:visited:before{
+    width: 100%;
+    left:0%;
+
+}
+.navbar ul li{
+    border-radius: 20px;
+    color: #1A73E8;
+    display: block;
+    float: left;
+    position: relative;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    font-size: 16px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position:relative;
+    overflow:hidden;
+    z-index: 2;
+    opacity: 0;
+    animation: wczytu 0.3s ease-in-out forwards ;
+    animation-delay: 500ms;
+}
+
+.navbar ul li:hover{
+    outline: 1px solid gray;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.linia{
+    height: 4px;
+    width: 25px;
+    margin: 4px;
+    background-color: black;
+}
+.logo{
+    margin-right: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: wczytu 0.8s ease-in-out forwards;
+}
+.container{
+    
+}
+.carousel {
+    height: 600px;
+    overflow: hidden;
+   
+}
+.relative-carousel-caption {
+    position: relative;
+  }
+.custom-carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Czarne tło z 50% przezroczystości */
+    padding-top: 15px; /* Dodajemy padding-top dla czytelności tekstu */
+    border-radius: 5px; /* Zaokrąglenie rogów tła */
+    width: 100%; /* Szerokość tła na całą szerokość karuzeli */
+    bottom: 0px;
+    left: 0; /* Wyrównujemy tło do lewej strony karuzeli */
+    border-top: 1px solid black;
+    border-bottom: 2px solid rgb(26, 0, 130);
+}
+.carousel-item {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+.carousel::before {
+    content: "";
+    border: 2px solid rgb(26, 0, 130);
+    position: absolute;
+    bottom: -190px;
+    left: 10%;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 1;
+    height: 200px;
+    transform: rotate(45deg);
+    background-color: white;
+    
+  }
+.navbar ul.sq li{
+    border-radius: 20px;
+    display: block;
+    float: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    z-index: 2;
+    padding-right: 10px;
+    margin: 5px;
+    font-size: 15px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+}  
+.trzykreski{
+    display: none;
+    padding-right: 15px;
+}
+@media (max-width:768px){
+  	html{
+      
+      overflow-x: hidden !important}
+    .social{
+        margin-bottom: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar ul li{
+       clear: both;
+       display: none;
+    }
+    #auto{
+        display: none;
+    }
+    iframe{
+        width: 700px;
+    }
+    .overlay{
+        width: 30px;
+        height: 30px;
+        top: -15px;
+        left:47%;
+    }
+    .trzykreski
+    {
+        display: block;
+    }
+
+    font{
+        font-size: 10px;
+    }
+    .navbar ul.sq{
+        padding-left: 10px;
+        margin: 0px;
+        top: 50px;
+        left: 0px;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        z-index: 2;
+        transition: 0.2s ease-in-out;
+        border-bottom: 2px solid black;
+    }
+    .carousel::before{
+        width: 120px;
+        left: -10%;
+    }
+    .custom-carousel-caption h5 {
+        font-size: 1.5rem;
+      }
+    
+      .custom-carousel-caption p {
+        font-size: 1rem;
+      }
+}
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border: 1.5px solid rgb(19, 19, 19);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(29, 21, 55);
+    border: 1.5px solid whitesmoke;
+}
+.swiper {
+    width: 315px;
+    height: 420px;
+  }
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    border: 2px solid black;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background-color: rgb(255, 255, 255);
+}
+#tekst_opini{
+  	z-index: 2;
+  
+  pointer-events: none;
+    overflow: scroll;
+    max-height: 120px;
+   
+}
+.swiper-slide
+{
+    background-image: url("img/Blue\ White\ Modern\ ID\ Card\ \(240×320\ mm\).png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+.kafel{
+    z-index: 3;
+    transition: all 0.2s ease-in-out;
+}
+.kafel:hover{
+    transform: scale(94%);
+}
+
+
+@keyframes wczytu {
+    from {
+        position: left;
+        opacity: 0%;
+        scale: 50%;
+    }
+
+    to {
+        scale: 100%;
+        opacity: 100%;
+    }
+}
+
+
+  
+  
+  
+  
+  
+  
+  
